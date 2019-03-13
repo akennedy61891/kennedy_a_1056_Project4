@@ -6,21 +6,64 @@
   margin: 0 auto;
   background-color: #efefef;
   max-width: 1140px;
+  /*display: flex;
+  flex-direction: row;*/
 }
 
 .box {
-  background-color: #8ea86e;
-  color: #fff;
   border-radius: 5px;
   padding: 20px;
-  text-align: center;
   margin: 10px;
+  height: 300px;
 }
 
-@media screen and (min-width: 600px) {
-    .box {
+.box1 {
+  background-color: pink;
+}
+
+.box2 {
+  background-color: red;
+}
+
+.box3, .box4 {
+  display: none;
+}
+
+@media screen and (min-width: 641px) {
+    /*.box {
       flex: 1 1 auto;
+    }*/
+
+    .container {
+      display: flex;
+      flex: 1 1 row;
+    }
+
+    .box {
+      width: 200px;
+      height: 300px;
+    }
+
+    .box1 {
+      background-color: blue;
+    }
+
+    .box2 {
+      background-color: purple;
+    }
+
+    .box3 {
+      background-color: grey;
+      display: block;
+    }
+
+    .box4 {
+      background-color: brown;
+      display: block;
     }
 
 }
+
+
+
 
