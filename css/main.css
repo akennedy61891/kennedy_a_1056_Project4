@@ -30,13 +30,11 @@
 }
 
 @media screen and (min-width: 641px) {
-    /*.box {
-      flex: 1 1 auto;
-    }*/
 
     .container {
+      justify-content: space-evenly;
       display: flex;
-      flex: 1 1 row;
+      flex-direction: row;
     }
 
     .box {
